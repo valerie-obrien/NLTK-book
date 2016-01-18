@@ -1,0 +1,13 @@
+# Define a function called vocab_size(text) that has a single parameter for the text, 
+# and which returns the vocabulary size of the text.
+
+# I think vocabulary size means number of unique words.
+
+def vocab_size(text):
+	return len(set(text))
+
+# Check it.
+vocab_size(text1)
+len(set(text1))
+
+# They are the same.	

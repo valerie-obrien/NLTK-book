@@ -1,0 +1,18 @@
+# Write expressions for finding all words in text6 that meet the conditions listed below.
+# The result should be in the form of a list of words: ['word1', 'word2', ...].
+
+# Ending in ize
+# Containing the letter z
+# Containing the sequence of letters pt
+# Having all lowercase letters except for an initial capital (i.e., titlecase)
+
+# I first interpreted the instructions to mean that the words had to fit all the
+# conditions listed above, but this returned no results.
+special_words = sorted(w for w in set(text6) if 'z' in w and 'pt' in w)
+for word in special_words:
+	if word.endswith('ize') and word.istitle():
+		print(word, end=' ')
+	
+# This returns words that meet any of the conditions.
+words = sorted(w for w in set(text6) if 'z' in w or 'pt' in w or w.endswith('ize') or w.istitle())
+print(words, end=' ')

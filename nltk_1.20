@@ -1,0 +1,5 @@
+# What is the difference between the following two tests: 
+# w.isupper() and not w.islower()?
+
+# w.isupper() gets the words that are all uppercase, e.g. HELLO
+# not w.islower() gets the words that are not all lowercase, e.g. Hello, LoL

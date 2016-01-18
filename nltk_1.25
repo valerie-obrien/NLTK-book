@@ -1,0 +1,13 @@
+# Define sent to be the list of words ['she', 'sells', 'sea', 'shells', 'by', 'the', 
+# 'sea', 'shore']. 
+sent = ['she', 'sells', 'sea', 'shells', 'by', 'the', 'sea', 'shore']
+
+# Now write code to perform the following tasks:
+
+# Print all words beginning with sh
+for w in sent:
+	if w.startswith('sh'):
+		print (w)
+		
+# Print all words longer than four characters
+print([w for w in sent if len(w) > 4])

@@ -1,0 +1,7 @@
+# Define a function percent(word, text) that calculates how often a given word 
+# occurs in a text, and expresses the result as a percentage.
+def percent(word, text):
+	return 100 * text.count(word)/len(text)
+
+# Check it.	
+percent('the', text1)

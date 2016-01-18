@@ -1,0 +1,6 @@
+# We have seen how to represent a sentence as a list of words, where each word is 
+# a sequence of characters. What does sent1[2][2] do? Why?
+
+# This gets the third letter of the third word.
+# The first [2] says get the third word.
+# The second [2] says get the third letter.

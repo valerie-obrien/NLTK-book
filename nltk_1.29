@@ -1,0 +1,11 @@
+# We have been using sets to store vocabularies. Try the following Python expression: 
+# set(sent3) < set(text1).
+
+# Experiment with this using different arguments to set().
+# What does it do? Can you think of a practical application for this?
+# This returns an answer: True or False
+# It tells you whether the words in the text from the left side are contained 
+# within the text on the right. Specifically, that expression tells us that Moby Dick
+# contains all the words in the first sentence of Genesis.
+# This can tell us a great deal about the relationship between two texts.
+# We can see if a subset of words is contained within another text.

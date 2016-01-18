@@ -1,0 +1,11 @@
+# Define several variables containing lists of words, e.g., phrase1, phrase2, and so on. 
+phrase1 = ["My", "name", "is", "Valerie", ","]
+phrase2 = ["and", "I", "love", "linguistics"]
+
+# Join them together in various combinations (using the plus operator) to form whole 
+# sentences.
+phrase1 + phrase2
+phrase2 + phrase1
+
+# What is the relationship between len(phrase1 + phrase2) and len(phrase1) + len(phrase2)?
+# They return the same output.

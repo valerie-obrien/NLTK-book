@@ -1,0 +1,20 @@
+# Find all the four-letter words in the Chat Corpus (text5).
+four_letters = [w for w in text5 if len(w) == 4]
+
+# With the help of a frequency distribution (FreqDist), show these words 
+# in decreasing order of frequency.
+
+# This creates a frequency distribution of the 4-letter words.
+freqs = FreqDist(four_letters)
+
+# You can't sort a set, but a list can be sorted.
+# key takes a function.
+# lambda tells python that what follows is a function.
+# lambda creates a function with no name. x is the argument to the function. 
+# It says to return everything after the colon.
+sorted_4letters = sorted(list(set(four_letters)), key=(lambda x: freqs[x]), reverse=True)
+
+# Another (longer) way of writing out the lambda portion is:
+# def some_function(x):
+	# return freqs[x]	
+# sorted(..., key=some_function)

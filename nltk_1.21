@@ -1,0 +1,2 @@
+# Write the slice expression that extracts the last two words of text2.
+text2[len(text2)-2:]

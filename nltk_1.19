@@ -1,0 +1,18 @@
+# What is the difference between the following two lines? 
+# Which one will give a larger value? 
+# Will this be the case for other texts?
+
+# sorted(set(w.lower() for w in text1))
+# sorted(w.lower() for w in set(text1))
+
+# The first takes all the words in the text, makes them lowercase, and then returns 
+# the unique words, sorted.
+# The second takes all unique words (distinguishing between upper and lower case), 
+# makes them lowercase, and then sorts them.
+# There will be duplicates in the second, but not the first.
+# The second one will return a larger number in this case and in most cases.
+# If the text was already uniform in its case (e.g. all words lowercase), 
+# the two expressions would have the same output.
+
+# Note: when trying to interpret an expression, start with the innermost parentheses
+# and work your way outwards, figuring out what each piece means.

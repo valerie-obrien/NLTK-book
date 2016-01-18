@@ -1,0 +1,11 @@
+# This creates a list of numbers, 0-9, increments of 1.
+list(range(10))
+
+# This creates a list of numbers, 10-19, increments of 1.
+list(range(10, 20))
+
+# This creates a list of numbers, 10-18, increments of 2.
+list(range(10, 20, 2))
+
+# This creates a list of numbers that decrease from 20 to 12 by increments of 2.
+list(range(20, 10, -2))

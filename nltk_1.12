@@ -1,0 +1,11 @@
+# Consider the following two expressions, which have the same value. 
+# Which one will typically be more relevant in NLP? Why?
+
+# This one says, from this string, get characters 7-13.
+# "Monty Python"[6:12]
+
+# This says, from this list, get the second word.
+# ["Monty", "Python"][1]
+
+# The second one is more relevant in NLP because most of the time we're concerned
+# with words and not letters/characters.
